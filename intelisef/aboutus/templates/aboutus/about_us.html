@@ -1,0 +1,60 @@
+{% load static %}
+{% get_static_prefix as STATIC_PREFIX %}
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="stylesheet" href="{{ STATIC_PREFIX }}css/style7.css">
+    <meta charset="utf-8">
+    <title>SAWS</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  </head>
+  <body style='overflow-x:hidden;'>
+    <div class="header">
+      SAWS
+    </div>
+    <div class="postheader">
+      soil analyzing web system
+    </div>
+    <div class="headerbuttons">
+      <a class="hbutton" href="{%url 'home'%}">HOME</a>
+      <a class="hbutton" href="{%url 'analyze'%}">ANALYSIS</a>
+      <a class="hbutton" href="{%url 'aboutus'%}">ABOUT US</a>
+    </div>
+      <section class="content">
+    <section class="aboutus-information">
+
+      <p class="mnexyevo">
+        Тертишник Артем
+        <br>
+        Сфера інтересів: дизайн, програмування на Python, Front-End розробка, прикладна математика
+        <br>
+        Литвиненко Артем
+        <br>
+        Сфера інтересів: програмування на Python, розробка веб-інтерфейсів за допомогою фреймворку Django, вивчення принципів та структури нейронних мереж, прикладна математика
+
+      </p>
+
+    </section>
+
+        <section class="names">
+          <img id="clowns" src={% static "img/clowns.jpg" %} alt="">
+          <a id="name">Тертишник
+            Артем </a>
+          <a id="name" >Литвиненко
+            Артем  </a>
+        </section>
+      </section>
+    <div id="cont">Contact us</div>
+    <img id="ticon" src={% static "img/telegramicon.png" %} alt="">
+    <a id="ttag">@sooqwa</a>
+    <img id="ticon1" src={% static "img/telegramicon.png" %} alt="">
+    <a id="ttag">@userhhname</a>
+    <br>
+
+    <img id="opusheniy" src={% static "img/gmailicon.png" %} alt="">
+    <a id="gmail">sawscontact2020@gmail.com</a>
+
+  </body>
+</html>

@@ -1,0 +1,48 @@
+{% load static %}
+{% get_static_prefix as STATIC_PREFIX %}
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="stylesheet" href="{{ STATIC_PREFIX }}css/style2.css">
+    <meta charset="utf-8">
+    <title>SAWS</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+    <div class="header" style="border: none">
+      SAWS
+    </div>
+    <div class="postheader">
+      soil analyzing web system
+    </div>
+    <div class="headerbuttons">
+      <a class="hbutton" href="{%url 'home'%}">HOME</a>
+      <a class="hbutton" href="{%url 'analyze'%}">ANALYSIS</a>
+      <a class="hbutton" href="{%url 'aboutus'%}">ABOUT US</a>
+    </div>
+
+
+  </head>
+  <body>
+
+
+
+  <img src={% static "img/flower1.jpg" %} id="flower">
+  <section class="home-information">
+    <p> У сучасній світовій економіці велику роль посідає сільське господарство. З розквітом технологій з’явилась велика кількість пристроїв, що можуть полегшити, або взагалі взяти на себе деякі функції моніторингу стану сільськогосподарських земельних ресурсів.
+В той же час усі існуючі пристрої доволі дорогі, або незручні у користуванні. Проект ‘SAWS’ поєднує в собі три якості, які роблять його безальтернативним у своїй сфері.
+
+</p>
+<ul>
+  <li>Перша – бюджетність. Завдяки використанню апаратної платформи Arduino собівартість фізичної частини складає суму, що у порівнянні з вартістю інших пристроїв у цій сфері, є зовсім невеликою</li>
+  <br>
+  <li>Друга – легкість в освоєнні. Щоб почати аналіз ґрунту, та мати до нього з будь-якої точки у світі треба лише один раз під’єднатись до нього через сайт, увівши унікальний код до поля. Після цього вам буде надано детальний аналіз у поєднанні із рекомендаціями щодо поліпшення стану</li>
+  <br>
+  <li>Третя – унікальність. Жодна існуюча користувацька система аналізу ґрунту не надає можливість бездротовим шляхом проглядати усі показники якості ґрунту 24/7. ‘‘Розумні’’ рекомендації позбавлять вас від необхідності думати, як поліпшити показники.</li>
+
+</ul>
+<p>В підсумку маємо продукт, що значно полегшить кропіткий та тяжкий догляд за ґрунтом, а також замінить старі, громіздкі та незручні системи</p>
+</section>
+  </body>
+</html>
